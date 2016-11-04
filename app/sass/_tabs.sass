@@ -1,0 +1,100 @@
+.tabs	
+	> ul
+		border-bottom: 1px solid $main
+		li
+			@extend %extend_inline
+			line-height: 40px
+			padding: 0 10px
+			text-transform: uppercase
+			font-size: 14px
+			cursor: pointer
+			&.active
+				background-color: $main
+				color: $white
+	.tabs-wrap
+		min-height: 350px		
+		&.border
+			padding: 15px
+			border: 1px solid $gray
+		.tab
+			display: none
+			&:first-child
+				display: block
+				.tab-content
+					@include opacity(1)
+					margin-top: 0					
+			.tab-content
+				margin-top: 150px
+				@include opacity(0)
+				@include transition(all 0.8s)
+				&.active
+					margin-top: 0
+					@include opacity(1)
+.tabs-nav
+	border-bottom: 1px solid $gray
+	min-height: 50px
+	margin-bottom: 20px
+	&.house
+		ul
+			li
+				&.active
+					background-color: $houseP
+				&:before
+					background-color: $houseP
+	&.practice
+		ul
+			li
+				&.active
+					background-color: $practice
+				&:before
+					background-color: $practice		
+	&.bild
+		ul
+			li
+				&.active
+					background-color: $bild
+				&:before
+					background-color: $bild											
+	.settings
+		position: absolute
+		right: 15px
+		top: 0
+		height: 50px
+		width: 50px
+		line-height: 50px
+		text-align: center
+		color: $textColor
+		font-size: 25px
+		&:before
+			position: absolute
+			content: ''
+			left: 6px
+			top: 10px
+			width: 1px
+			height: 30px
+			background-color: $gray	
+	ul
+		text-align: right		
+		li
+			display: inline-block						
+			text-transform: uppercase
+			font-size: 14px	
+			line-height: 50px
+			padding: 0 12px
+			position: relative
+			cursor: pointer
+			&.active
+				background-color: $main
+				color: $white
+			&:hover:before
+				width: 100%
+			&:before
+				position: absolute
+				content: ''
+				width: 0
+				height: 1px
+				background-color: $main
+				left: 0
+				bottom: 0
+				@include transition (width 0.3s)
+

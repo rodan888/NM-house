@@ -1,0 +1,43 @@
+.popup
+	display: none
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 1000
+	background-color: rgba(255,255,255, .9)	
+	.popup-close
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		z-index: 10
+	.popup-content
+		position: absolute
+		z-index: 1000
+		max-width: 600px
+		padding: 20px
+		background-color: $white		
+		top: 50%
+		left: 50%
+		box-shadow: 0 0 3px #999
+		@include border-radius(5px)
+		@include transform(translateX(-50%) translateY(-50%))
+		@include transition(margin 0.6s)
+		&.anim
+			margin-top: 150px
+			opacity: 0
+	.fade_out
+		position: absolute
+		top: 0px
+		right: 0px
+		width: 40px
+		height: 40px
+		color: $white
+		line-height: 40px
+		text-align: center
+		font-size: 20px
+		cursor: pointer
+		color: $main
+		font-weight: bold

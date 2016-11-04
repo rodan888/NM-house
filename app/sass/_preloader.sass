@@ -1,0 +1,116 @@
+.preloader-wrap
+	min-height: 160px
+	position: relative
+	.preloader
+		position: absolute
+		width: 100%
+		height: 100%
+		&.gif		
+			background-image: url("../img/ajax_loader.gif")
+			background-repeat: no-repeat
+			background-position: 50% 50%	
+		&.css
+			border: 2px solid transparent
+			border-top-color: $main
+			border-radius: 50%
+			display: block
+			margin: 40px auto
+			width: 70px
+			height: 70px
+			position: relative
+			top: 50%
+			// left: 50%
+			-webkit-animation: spin 2s linear infinite
+			-moz-animation: spin 2s linear infinite
+			-o-animation: spin 2s linear infinite
+			-ms-animation: spin 2s linear infinite
+			animation: spin 2s linear infinite
+			&:before 
+				border: 2px solid transparent
+				border-top-color: $red
+				border-radius: 50%
+				content: ""
+				position: absolute
+				top: 5px
+				right: 5px
+				bottom: 5px
+				left: 5px
+				-webkit-animation: spin 3s linear infinite
+				-moz-animation: spin 3s linear infinite
+				-o-animation: spin 3s linear infinite
+				-ms-animation: spin 3s linear infinite
+				animation: spin 3s linear infinite
+			&:after 
+				border: 2px solid transparent
+				border-top-color: $gray
+				border-radius: 50%
+				content: ""
+				position: absolute
+				top: 15px
+				left: 15px
+				bottom: 15px
+				right: 15px
+				-webkit-animation: spin 1.5s linear infinite
+				-moz-animation: spin 1.5s linear infinite
+				-o-animation: spin 1.5s linear infinite
+				-ms-animation: spin 1.5s linear infinite
+				animation: spin 1.5s linear infinite
+
+@-webkit-keyframes spin 
+	0% 
+		-webkit-transform: rotate(0deg)
+		-ms-transform: rotate(0deg)
+		transform: rotate(0deg)
+	
+	100% 
+		-webkit-transform: rotate(360deg)
+		-ms-transform: rotate(360deg)
+		transform: rotate(360deg)
+	
+
+@-moz-keyframes spin 
+	0% 
+		-webkit-transform: rotate(0deg)
+		-ms-transform: rotate(0deg)
+		transform: rotate(0deg)
+	
+	100% 
+		-webkit-transform: rotate(360deg)
+		-ms-transform: rotate(360deg)
+		transform: rotate(360deg)
+	
+
+@-o-keyframes spin 
+	0% 
+		-webkit-transform: rotate(0deg)
+		-ms-transform: rotate(0deg)
+		transform: rotate(0deg)
+	
+	100% 
+		-webkit-transform: rotate(360deg)
+		-ms-transform: rotate(360deg)
+		transform: rotate(360deg)
+	
+
+@-ms-keyframes spin 
+	0% 
+		-webkit-transform: rotate(0deg)
+		-ms-transform: rotate(0deg)
+		transform: rotate(0deg)
+	
+	100% 
+		-webkit-transform: rotate(360deg)
+		-ms-transform: rotate(360deg)
+		transform: rotate(360deg)
+	
+
+@keyframes spin 
+	0% 
+		-webkit-transform: rotate(0deg)
+		-ms-transform: rotate(0deg)
+		transform: rotate(0deg)
+	
+	100% 
+		-webkit-transform: rotate(360deg)
+		-ms-transform: rotate(360deg)
+		transform: rotate(360deg)

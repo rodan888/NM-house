@@ -1,0 +1,17 @@
+{
+  "pinlist": [
+      {
+      "html": "<div class='card-grid'><div class='img'><img src='img/card-full.jpg' alt='foto'></div><div class='descr'><a href='#' class='tag bild'>модерн</a><h3 class='title small mb2 mt2'><a href='#' class='white'>В моде - природные цвета</a></h3><div class='date-block white'><span>10 июля 2016</span></div></div></div>"
+      },
+      {
+      "html": "<div class='card-grid'><div class='img'><img src='img/card-full.jpg' alt='foto'></div><div class='descr'><a href='#' class='tag bild'>модерн</a><h3 class='title small mb2 mt2'><a href='#' class='white'>В моде - природные цвета</a></h3><div class='date-block white'><span>10 июля 2016</span></div></div></div>"
+      },
+      {
+      "html": "<div class='card-grid'><div class='img'><img src='img/card-full.jpg' alt='foto'></div><div class='descr'><a href='#' class='tag bild'>модерн</a><h3 class='title small mb2 mt2'><a href='#' class='white'>В моде - природные цвета</a></h3><div class='date-block white'><span>10 июля 2016</span></div></div></div>"
+      },
+      {
+      "html": "<div class='card-grid'><div class='img'><img src='img/card-full.jpg' alt='foto'></div><div class='descr'><a href='#' class='tag bild'>модерн</a><h3 class='title small mb2 mt2'><a href='#' class='white'>В моде - природные цвета</a></h3><div class='date-block white'><span>10 июля 2016</span></div></div></div>"
+      }      
+  ]
+}
+

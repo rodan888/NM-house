@@ -1,0 +1,361 @@
+@import "bourbon"
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+	header 
+		.navbar 
+			nav 
+				ul 
+					li 
+						a
+							font-size: 12px
+							padding: 0 4px
+							&:before
+								display: none
+	.edit-сhoice 
+		.card 
+			.descr
+				padding: 0 10px
+				h3
+					font-size: 14px
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	header
+		.navbar
+			nav
+				display: none
+		.search
+			top: -90px
+		.mob-button
+			right: 35px
+			left: initial
+		.logo
+			a
+				left: 0
+
+	.tab
+		.first-items
+			.descr
+				height: 240px!important
+		.small-prew
+			border-top: none
+			margin-top: 0
+	.tabs-nav 
+		ul
+			li
+				font-size: 12px
+	aside
+		.slider-sidebar 
+			.item
+				height: 415px
+
+	.attachment
+		position: initial
+	.bun-defoult
+		.container
+			position: relative
+		.col-md-3
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			.descr-wrap
+				.descr
+					padding: 0 15px
+					color: $white
+					p,.read-more.black
+						color: $white
+	.copy
+		padding: 0 15px
+	
+	.top-image
+		background-position: 50% 0
+		background-attachment: initial
+		background-size: cover
+		.descr
+			padding: 0 15px
+
+	.bord-block
+		width: 98%
+
+	.event 
+		.slider-sidebar
+			.item
+				height: 440px
+
+	.author-item
+		&:nth-child(odd)		
+			padding-left: 380px
+		&:nth-child(even)
+			padding-right: 380px
+		.img-wrap
+			width: 365px
+		.linc-block
+			max-width: 270px
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+	
+	.card-horisontal
+		padding: 0!important
+		.img-wrap
+			position: relative
+			width: 100%		
+
+	.map.multiple,.map.single
+		height: 345px
+
+	body
+		padding-top: 52px
+	header 	
+		min-height: 52px
+		.side-nav
+			top: 52px
+			&:after
+				top: 52px
+		form#searchForm
+			height: 71px
+		.navbar
+			.logo
+				min-height: 50px
+				a
+					img
+						width: 105px
+					span
+						display: block
+						margin-left: 0
+			.search
+				top: -70px
+			.social-line
+				display: none
+	.last-items
+		.img-wrap
+			margin-bottom: 5px
+			&.first, &.third
+				margin-right: 0
+			&.second
+				margin-bottom: 5px
+				margin-left: 0
+
+	.journal 
+		.descr
+			padding-left: 0
+		.last-jornal
+			text-align: center
+		.container-fluid.clrp
+			padding: 0 15px
+
+	.owl-controls .owl-buttons
+		display: none!important
+	
+	// #inner-page .grid.journal .inner-item
+	// 	height: 480px!important
+	// 	width: 365px!important
+	.news
+		.card-horisontal
+			padding-left: 0!important
+			.img-wrap
+				margin: 0 auto
+				left: initial!important
+		.calendar
+			z-index: 10
+	
+	.tabs .tabs-wrap
+		min-height: 250px
+
+	.download
+		height: auto
+		min-height: 142px
+		padding: 5px 15px
+		text-align: center
+		.register
+			margin-top: 10px
+
+	.author-item
+		padding: 0!important
+		.img-wrap
+			width: 100%
+			height: 280px
+			position: relative
+		.linc-block
+			max-width: 100%
+			position: initial
+		.social
+			position: initial
+			display: inline-block
+
+	.news 
+		.card-horisontal
+			&.bloger
+				padding-left: 0!important
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+	.journal
+		text-align: center
+		.btn.full.bord
+			margin: 0 auto 20px
+	footer
+		margin-top: 0
+		.logo-wrap
+			text-align: center
+			padding-bottom: 15px
+		.social
+			text-align: center	
+			padding: 5px 0		
+		.blogs 
+			li
+				margin-left: 3px
+		.portfolio 
+			text-align: center
+			li
+				width: 130px
+				height: 100px
+	.tabs-nav
+		ul
+			text-align: center			
+		.title
+			margin-bottom: 20px
+			text-align: center
+	.grid-packery
+		.grid
+			.grid-item
+				width: 100%!important
+				height: 295px!important
+				.img-wrap	
+					width: 100%
+	#inner-page 
+		.grid.journal 
+			.inner-item
+				width: 100%!important
+				height: 480px!important
+				&:nth-child(2)
+					width: 100%!important
+	.histori
+		padding: 0
+
+	.event 
+		.slider-sidebar
+			.item
+				height: 250px
+
+
+	.inner-design
+		.slider-sidebar
+			.item
+				height: 250px		
+	.content-inner
+		.blockquote
+			padding-left: 0
+			.autor-wrap
+				position: initial
+				width: 100%
+				text-align: center
+				margin: 20px 0
+				padding: 0
+				.ava-wrap
+					margin-top: 0
+		.cont-text
+			padding-left: 0
+	.popup-slider
+		padding-left: 0
+		padding-top: 75px
+		&:before
+			width: 100%
+			border-top: 1px solid $gray
+			padding-top: 5px
+		.grid
+			.popup-item
+				width: 100%
+	.foto-list
+		.content-inner
+			padding-left: 0
+		.foto-block
+			padding-top: 35px
+			&:before
+				left: 0
+				top: 0px
+			p
+				left: 30px
+				top: 10px
+				text-align: left
+				width: 230px
+
+	.slider-four 
+		.item
+			margin-right: 0
+
+	.nav-ajax
+		li 
+			button
+				width: 200px
+				margin: 5px 0
+
+	.fast-form form.send .button-block
+		text-align: center
+
+
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
